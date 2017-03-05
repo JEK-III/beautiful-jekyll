@@ -3,11 +3,11 @@
 /* --- General --- */
 
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
-  font-size: 18px;
-  color: #404040;
+  font-family: 'Open Serif Pro', 'Times New Roman', serif;
+  font-size: 16px;
+  color: #032421;
   position: relative;
-  background: #FFF;
+  background: #E0E4DB;
 }
 p {
   line-height: 1.5;
@@ -18,8 +18,8 @@ p a {
   color: #008AFF;
 }
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 800;
+  font-family: 'Open Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
 }
 a {
   color: #008AFF;
@@ -97,22 +97,40 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
-  background: #F5F5F5;
+    background: #051723; /* For browsers that do not support gradients */
+/*    background: -webkit-linear-gradient(left top, #009bce, #300e6e);  For Safari 5.1 to 6.0 */
+/*    background: -webkit-linear-gradient(left top, #b4c4af, #085a52);  For Safari 5.1 to 6.0 */ 
+/*    background: -webkit-linear-gradient(left top, #627b37, #063b40);  For Safari 5.1 to 6.0 */
+    background: -webkit-linear-gradient(left top, #300e6e, #085a52);  For Safari 5.1 to 6.0 
+    background: -o-linear-gradient(left top, #051723, #282e52); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left top, #051723, #282e52); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(left top, #051723, #282e52); /* Standard syntax (must be last) */;
   border-bottom: 1px solid #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .navbar-custom .nav li a {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 1px;
+  color: #ffeead;   
 }
 
+/*
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
-  font-weight: 800;
+  font-weight: 300;
+  font-size: 32px;
   color: #404040;
 }
+*/
+
+.navbar-custom .navbar-brand {
+  font-weight: 300;
+  font-size: 32px;
+  color: #ffeead;   
+}
+
 
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus ,
@@ -257,7 +275,7 @@ img {
 
 footer {
   padding: 30px 0;
-  background: #F5F5F5;
+  background: #085a52;
   border-top: 1px #EAEAEA solid;
   margin-top: 50px;
   font-size: 14px;
@@ -510,7 +528,7 @@ footer .theme-by {
     padding: 150px 0;
   }  
   .intro-header .page-heading h1 {
-    font-size: 80px;
+    font-size: 64px;
   }
   .intro-header .post-heading h1 {
     font-size: 50px;
