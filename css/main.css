@@ -61,8 +61,7 @@ a:focus {
   color: #0085a1;
 }
 
-
-div a.wireframe {
+a.wireframe {
     margin: auto;
     width: 25%;
     padding: 15px;
