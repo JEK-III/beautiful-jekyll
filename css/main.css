@@ -1,13 +1,32 @@
 @import url("pygment_highlights.css");
 
+
+/*Override max width*/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
+
+
 /* --- General --- */
 
 body {
   font-family: 'Open Serif Pro', 'Times New Roman', serif;
-  font-size: 16px;
-  color: #032421;
+  font-size: 20px;
+  color: #13052C;
   position: relative;
-  background: #E0E4DB;
+  background: #f7f9f9;
 }
 p {
   line-height: 1.5;
@@ -15,19 +34,45 @@ p {
 }
 p a {
   /* text-decoration: underline */
-  color: #008AFF;
+  color: #085a52;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
+h2 {
+    padding-top: 20px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+h3 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #716980;
+}
+
+
 a {
-  color: #008AFF;
+  color: #085a52;
 }
 a:hover,
 a:focus {
   color: #0085a1;
 }
+
+
+div a.wireframe {
+    margin: auto;
+    width: 25%;
+    padding: 15px;
+    border: 2px solid #085a52;
+    text-align: center;
+    font-family: 'Open Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
+
 blockquote {
   color: #808080;
   font-style: italic;
@@ -94,10 +139,17 @@ img {
   }
 }
 
+figcaption {
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 16px;
+    background: white;
+}
+
 /* --- Navbar --- */
 
 .navbar-custom {
-    background: #051723; /* For browsers that do not support gradients */
+    background: #085a52; /* For browsers that do not support gradients */
 /*    background: -webkit-linear-gradient(left top, #009bce, #300e6e);  For Safari 5.1 to 6.0 */
 /*    background: -webkit-linear-gradient(left top, #b4c4af, #085a52);  For Safari 5.1 to 6.0 */ 
 /*    background: -webkit-linear-gradient(left top, #627b37, #063b40);  For Safari 5.1 to 6.0 */
@@ -270,6 +322,8 @@ img {
     border-width: 0 1px 1px;
   }
 }
+
+
 
 /* --- Footer --- */
 
